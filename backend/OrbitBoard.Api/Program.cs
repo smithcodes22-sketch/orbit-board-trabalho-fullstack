@@ -25,12 +25,16 @@ builder.Services.AddSwaggerGen(options =>
 
 builder.Services.AddSingleton<IWorkspaceService, WorkspaceService>();
 
+var corsOrigins = builder.Configuration["Cors:AllowedOrigins"]?
+    .Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+    ?? ["http://localhost:5173", "http://localhost:8080"];
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("Frontend", policy =>
     {
         policy
-            .WithOrigins("http://localhost:5173")
+            .WithOrigins(corsOrigins)
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
