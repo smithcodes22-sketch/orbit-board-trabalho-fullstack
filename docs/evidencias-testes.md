@@ -1,9 +1,3 @@
-# Evidências de testes — OrbitBoard
-
-Registro dos testes manuais de integração realizados pela equipe.
-
-> **Instrução:** Adicione prints na pasta `docs/prints/` e referencie abaixo. Exemplo: `![Dashboard](prints/01-dashboard.png)`
-
 ## Ambiente de teste
 
 | Item | Valor |
@@ -60,15 +54,3 @@ curl http://localhost:5200/health
 
 # Listar projetos
 curl http://localhost:5200/api/projects
-```
-
----
-
-## Prints sugeridos
-
-1. Dashboard com métricas carregadas
-2. Swagger com endpoints visíveis
-3. DevTools → Network mostrando requisição JSON
-4. Formulário de criação com sucesso
-5. Mensagem de erro (409 ou API offline)
-6. Terminal com `docker compose ps` e containers healthy

@@ -4,11 +4,11 @@ Aplicação full stack para gestão de projetos, tarefas e equipe. Desenvolvida 
 
 ## Integrantes da equipe
 
-| Integrante | Contribuição |
+| Integrantes
 |---|---|
-| _Nome 1_ | _preencher_ |
-| _Nome 2_ | _preencher_ |
-| _Nome 3_ | _preencher_ |
+| Lucas Alessandro Smith Frota |
+| Vinicius da Silva Brito |
+| Marseilly Brivilati |
 
 ## Descrição
 
@@ -122,7 +122,6 @@ Consulte [.env.example](./.env.example) na raiz e [frontend/.env.example](./fron
 | [docs/arquitetura.md](./docs/arquitetura.md) | Diagrama e decisões técnicas |
 | [docs/contrato-api.md](./docs/contrato-api.md) | Endpoints, payloads e códigos HTTP |
 | [docs/evidencias-testes.md](./docs/evidencias-testes.md) | Roteiro de testes e evidências |
-| [docs/roteiro-apresentacao.md](./docs/roteiro-apresentacao.md) | Roteiro da apresentação final |
 | [backend/README.md](./backend/README.md) | Detalhes do back-end |
 | [frontend/README.md](./frontend/README.md) | Detalhes do front-end |
 
@@ -139,22 +138,3 @@ orbit-board-project/
 └── README.md
 ```
 
-## Ajustes realizados pela equipe
-
-- Dockerfiles multi-stage para back-end e front-end
-- `docker-compose.yml` com health check e dependência entre serviços
-- CORS configurável via variável de ambiente (suporte a dev e Docker)
-- Documentação completa em `docs/` e README de entrega
-- Pasta de evidências de testes com roteiro manual
-
-## Fluxo Git (equipe)
-
-Este repositório deve ser a cópia **própria da equipe** no GitHub. Para sincronizar com o repositório base do docente:
-
-```bash
-git remote add upstream https://github.com/denkencapacitacao/orbit-board-project.git
-git fetch upstream
-git merge upstream/main
-```
-
-Trabalhe em branches (`feature/nome-da-atividade`) e integre via Pull Request.
