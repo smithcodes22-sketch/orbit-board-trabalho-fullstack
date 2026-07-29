@@ -4,8 +4,8 @@ Aplicação full stack para gestão de projetos, tarefas e equipe. Desenvolvida 
 
 ## Integrantes da equipe
 
-| Integrantes
-|---|---|
+| Integrante |
+|---|
 | Lucas Alessandro Smith Frota |
 | Vinicius da Silva Brito |
 | Marseilly Brivilati |
@@ -122,8 +122,13 @@ Consulte [.env.example](./.env.example) na raiz e [frontend/.env.example](./fron
 | [docs/arquitetura.md](./docs/arquitetura.md) | Diagrama e decisões técnicas |
 | [docs/contrato-api.md](./docs/contrato-api.md) | Endpoints, payloads e códigos HTTP |
 | [docs/evidencias-testes.md](./docs/evidencias-testes.md) | Roteiro de testes e evidências |
+| [docs/roteiro-apresentacao.md](./docs/roteiro-apresentacao.md) | Roteiro sugerido para apresentação |
 | [backend/README.md](./backend/README.md) | Detalhes do back-end |
 | [frontend/README.md](./frontend/README.md) | Detalhes do front-end |
+
+## CI/CD
+
+O pipeline está em [.github/workflows/ci.yml](./.github/workflows/ci.yml). Ele executa validação do back-end, build do front-end e build das imagens Docker via Docker Compose.
 
 ## Estrutura do repositório
 
@@ -132,9 +137,9 @@ orbit-board-project/
 ├── backend/           API ASP.NET Core + Dockerfile
 ├── frontend/          React + Vite + Dockerfile
 ├── docs/              Documentação do trabalho
+├── .github/workflows/ Pipeline CI/CD
 ├── docker-compose.yml Orquestração dos containers
 ├── .env.example       Variáveis de ambiente
 ├── .gitignore
 └── README.md
 ```
-
